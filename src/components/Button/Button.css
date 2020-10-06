@@ -1,0 +1,49 @@
+.Button {
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  color: #555151;
+  border-radius: 0%;
+  cursor: pointer;
+  display: flex;
+  font-size: 45px;
+  height: 100px;
+  justify-content: center;
+  width: 110px;
+  transition: filter 0.3s ease-in;
+  border: 0px solid white;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(241, 236, 236, 1) 35%,
+    rgba(240, 240, 240, 1) 100%
+  );
+}
+
+.Button:active,
+.Button:focus {
+  filter: brightness(120%);
+}
+
+.Button.operator.equal {
+  width: 221px;
+  grid-column: span 2;
+  background: hsl(336, 89%, 58%);
+  position: relative;
+  justify-content: center;
+}
+
+.Button.function {
+  color: black;
+  background: #a5a5a5;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(241, 236, 236, 1) 35%,
+    rgba(240, 240, 240, 1) 100%
+  );
+}
+
+.Button.operator {
+  background: #9932cc;
+  color: white;
+}
